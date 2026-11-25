@@ -1,62 +1,79 @@
-
-/* ==================== CSS PREMENNÉ ==================== */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 :root {
   /* Farby */
-  --primarna: #2563eb;
-  --primarna-tmava: #1e40af;
-  --akcent: #f97316;
-  --text-tmavy: #1f2937;
-  --text-stredny: #6b7280;
-  --pozadie-biela: #ffffff;
-  --pozadie-svetla: #f9fafb;
-
-  --font-nadpisy: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
-
-  body{
-font-family: var(--font-body);
-font-size: 1rem;
-background-color: var(--pozadie-biela);
-color: var(--text-tmavy);
-  }
-
-  ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-  }
-
-  a{
+    --primarna: #2563eb;
+    --primarna-tmava: #1e40af;
+    --akcent: #f97316;
+    --text-tmavy: #1f2937;
+    --text-stredny: #6b7280;
+    --pozadie-biela: #ffffff;
+    --pozadie-svetla: #f9fafb;
+ 
+    --font-nadpisy: "Montserrat", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+ 
+    --medzera-s: 1rem;
+    --medzera-m: 1.5rem;
+    --medzera-l: 2rem;
+    --medzera-x: 3rem;
+}
+ 
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background-color: var(--pozadie-biela);
+    color: var(--text-tmavy);
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+ 
+a {
     text-decoration: none;
     color: inherit;
-  }
-
-  h1, h2, h3: {
-    font-family: var(--font-nadpisy);
-  }
-
-.hlavicka{
-    background-color: var(--primarna);
-    color: var(--text-stredny);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
 }
-
---medzera-s:1rem;
---medzera-m: 1,5rem;
---medzera-l: 2rem;
---medzera-x: 3rem;  
-
-
-.navigacia_zoznam{
-
+ 
+h1,h2,h3 {
+    font-family: var(--font-nadpisy);
+    margin: 0;
+}
+ 
+.hlavicka {
+    background-color: var(--primarna);
+    color: var(--pozadie-svetla);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-
+    padding: var(--medzera-s);
+}
+ 
+.navigacia_polozka {
+    font-weight: 700;
+    padding: 0.5rem var(--medzera-m);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+ 
+.navigacia_zoznam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medzera-s);
+}
+ 
+.navigacia {
+    margin: var(--medzera-s);
+}
+ 
+.navigacia_polozka:hover {
+    background-color: var(--primarna-tmava);
+}
+ 
+.hero{
+    background: linear-gradient(135deg, var(--primarna), var(--primarna-tmava)
+    );
 }
