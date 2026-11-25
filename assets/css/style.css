@@ -1,79 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* ==================== IMPORT FONTOV ==================== */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+/* ==================== CSS PREMENNÉ ==================== */
  
 :root {
   /* Farby */
-    --primarna: #2563eb;
-    --primarna-tmava: #1e40af;
-    --akcent: #f97316;
-    --text-tmavy: #1f2937;
-    --text-stredny: #6b7280;
-    --pozadie-biela: #ffffff;
-    --pozadie-svetla: #f9fafb;
+  --primarna: #2563eb;
+  --primarna-tmava: #1e40af;
+  --akcent: #f97316;
+  --text-tmavy: #1f2937;
+  --text-stredny: #6b7280;
+  --pozadie-biela: #ffffff;
+  --pozadie-svetla: #f9fafb;
  
-    --font-nadpisy: "Montserrat", sans-serif;
-    --font-body: "Open Sans", sans-serif;
  
-    --medzera-s: 1rem;
-    --medzera-m: 1.5rem;
-    --medzera-l: 2rem;
-    --medzera-x: 3rem;
+  --font-nadpisy: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+ 
+  --medzera-s: 1rem;
+  --medzera-m: 1.5rem;
+  --medzera-l: 2rem;
+  --medzera-x: 3rem;
 }
  
-body {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    background-color: var(--pozadie-biela);
-    color: var(--text-tmavy);
-}
-ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
+body{
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background-color: var(--pozadie-biela);
+  color: var(--text-tmavy);
 }
  
-a {
-    text-decoration: none;
-    color: inherit;
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
  
-h1,h2,h3 {
-    font-family: var(--font-nadpisy);
-    margin: 0;
+a{
+  text-decoration: none;
+  color: inherit;
 }
  
-.hlavicka {
+h1,h2,h3{
+  font-family: var(--font-nadpisy);
+  margin: 0;
+}
+ 
+ 
+/* ==================== HLAVIČKA ==================== */
+ 
+.hlavicka{
+ 
     background-color: var(--primarna);
-    color: var(--pozadie-svetla);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: var(--medzera-s);
-}
- 
-.navigacia_polozka {
-    font-weight: 700;
-    padding: 0.5rem var(--medzera-m);
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
- 
-.navigacia_zoznam {
+    color: var(--pozadie-biela);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--medzera-s);
+    padding: var(--medzera-m) 0;
 }
  
-.navigacia {
-    margin: var(--medzera-s);
+.navigacia__zoznam{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medzera-l);
+   
 }
  
-.navigacia_polozka:hover {
-    background-color: var(--primarna-tmava);
+.navigacia__odkaz:hover{
+ 
+    background-color: #163085;
 }
+ 
+.navigacia__odkaz{
+    font-weight: 600;
+    padding: 0.5rem var(--medzera-m);
+    border-radius: 4px;
+    transition: var(--primarna-tmava);
+}
+ 
+.navigacia{
+ 
+    margin: var(--medzera-m);
+}
+ 
+ 
+ 
+ 
+/* Hero Sekcia */
  
 .hero{
-    background: linear-gradient(135deg, var(--primarna), var(--primarna-tmava)
-    );
+ 
+    color: var(--pozadie-biela);
+    background: linear-gradient(135deg, var(--primarna), var(--primarna-tmava));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medzera-s);
+    padding: var(--medzera-m);
 }
+ 
+.tlacidlo{
+ 
+    background-color: var(--akcent);
+    padding: 0.45rem var(--medzera-m);
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all, 0.3s;
+}
+ 
+.tlacidlo:hover{
+ 
+    background-color: #ad4d08;
+ 
+}
+ 
+ 
+.dovody__nadpis {
+    text-align: center;
+}
+ 
+.vyhody {
+ 
+}
+ 
+.vyhoda {
+    background-color: var(--pozadie-biela);
+}
+ 
